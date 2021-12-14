@@ -5,10 +5,12 @@ import { ImportCategoryUseCase } from "./ImportCategoryUseCase";
 
 
 class ImportCategoryController{
-    constructor(private importCategotyUseCase: ImportCategoryUseCase){}
+    constructor(private importCategoryUseCase: ImportCategoryUseCase){}
     handle(request: Request, response: Response):Response{
         const {file} = request;
-        this.importCategotyUseCase.execute(file);
+
+        this.importCategoryUseCase.execute(file);
+        
         return response.send();
     }
 

@@ -9,4 +9,4 @@ const importCategoryController = new ImportCategoryController(
 );
 
 
-export {ImportCategoryController}
+export {importCategoryController};
