@@ -9,6 +9,7 @@ class ImportCategoryUseCase {
 
         stream.pipe(parseFile);
 
+    
         parseFile.on("data", async (line: any)=>{
          console.log(line);
         });
