@@ -8,7 +8,7 @@ class CategoriesRepository implements ICategoriesRepository{
 
     private static INSTANCE: CategoriesRepository;
 
-    private constructor() {
+    public constructor() {
         this.categories = [];
     }
     public static getInstance(): CategoriesRepository{
